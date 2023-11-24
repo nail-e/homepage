@@ -106,8 +106,8 @@ const default_config = {
       }],
     },
     {
-      name: "design",
-      background_url: "src/img/banners/cbg-6.gif",
+      name: "School",
+      background_url: "",
       categories: [
         {
           name: "inspiration",
@@ -125,8 +125,8 @@ const default_config = {
               icon_color: "#7daea3",
             },
             {
-              name: "leonardo ai",
-              url: "https://app.leonardo.ai/",
+              name: "OneNote",
+              url: "https://www.onenote.com/hrd?wdorigin=ondcauth2&wdorigin=poc",
               icon: "brand-openai",
               icon_color: "#89b482",
             },

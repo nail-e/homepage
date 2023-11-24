@@ -7,16 +7,12 @@ const default_config = {
     scale: "C",
   },
   clock: {
-    format: "h:i p",
+    format: "hh:mm a",
     iconColor: "#ea6962",
   },
   search: {
     engines: {
       g: ["https://google.com/search?q=", "Google"],
-      d: ["https://duckduckgo.com/html?q=", "DuckDuckGo"],
-      y: ["https://youtube.com/results?search_query=", "Youtube"],
-      r: ["https://www.reddit.com/search/?q=", "Reddit"],
-      p: ["https://www.pinterest.es/search/pins/?q=", "Pinterest"],
     },
   },
   keybindings: {
@@ -29,40 +25,34 @@ const default_config = {
   openLastVisitedTab: true,
   tabs: [
     {
-      name: "chi ll",
-      background_url: "src/img/banners/cbg-2.gif",
+      name: "General",
+      background_url: "",
       categories: [{
         name: "Social Media",
         links: [
           {
-            name: "whatsapp",
-            url: "https://web.whatsapp.com/",
-            icon: "brand-whatsapp",
+            name: "Youtube",
+            url: "https://youtube.com/",
+            icon: "brand-youtube-filled",
             icon_color: "#a9b665",
           },
           {
-            name: "twitter",
-            url: "https://twitter.com/home",
+            name: "Instagram",
+            url: "https://instagram.com",
             icon: "brand-twitter-filled",
             icon_color: "#7daea3",
           },
           {
-            name: "reddit",
-            url: "https://www.reddit.com/",
-            icon: "brand-reddit",
+            name: "Whatsapp",
+            url: "https://web.whatsapp.com/",
+            icon: "brand-whatsapp",
             icon_color: "#e78a4e",
           },
           {
-            name: "youtube",
-            url: "https://www.youtube.com/",
+            name: "Reddit",
+            url: "https://www.reddit.com/",
             icon: "brand-youtube-filled",
             icon_color: "#ea6962",
-          },
-          {
-            name: "twitch",
-            url: "https://www.twitch.tv/",
-            icon: "brand-twitch",
-            icon_color: "#d3869b",
           },
         ],
       }, {
@@ -88,17 +78,17 @@ const default_config = {
           },
         ],
       }, {
-        name: "Video",
+        name: "Important Linux Stuff",
         links: [
           {
-            name: "disney+",
-            url: "https://www.disneyplus.com/home",
+            name: "Arch Wiki",
+            url: "https://wiki.archlinux.org",
             icon: "brand-disney",
             icon_color: "#7daea3",
           },
           {
-            name: "primevideo",
-            url: "https://www.primevideo.com/region/eu/?ref_=dv_web_unknown",
+            name: "Arch Packages",
+            url: "https://archlinux.org/packages/?sort=&q=&maintainer=&flagged=",
             icon: "brand-amazon",
             icon_color: "#7daea3",
           },
@@ -110,7 +100,7 @@ const default_config = {
       background_url: "",
       categories: [
         {
-          name: "inspiration",
+          name: "General",
           links: [
             {
               name: "pinterest",
@@ -139,46 +129,52 @@ const default_config = {
           ],
         },
         {
-          name: "resources",
+          name: "Resources",
           links: [
             {
-              name: "figma",
-              url: "https://www.figma.com",
+              name: "Think IB",
+              url: "https://www.thinkib.net",
               icon: "brand-figma",
               icon_color: "#d3869b",
             },
             {
-              name: "uxpro",
-              url: "https://uxpro.cc/",
+              name: "Exam Mate",
+              url: "exam-mate.com",
               icon: "components",
               icon_color: "#a9b665",
             },
             {
-              name: "colorhunt",
-              url: "https://colorhunt.co/",
+              name: "Oxford Secondary Bookshelf",
+              url: "https://bookshelf.oxfordsecondary.co.uk/sign-in",
               icon: "color-picker",
               icon_color: "#ea6962",
             },
             {
-              name: "adobe color",
-              url: "https://color.adobe.com/es/create/color-wheel",
+              name: "Revision Village",
+              url: "revisionvillage.com",
               icon: "brand-adobe",
               icon_color: "#7daea3",
             },
             {
-              name: "terminalsexy",
-              url: "https://terminal.sexy",
+              name: "Revision Dojo",
+              url: "https://www.revisiondojo.com",
               icon: "prompt",
               icon_color: "#e78a4e",
             },
           ],
         },
         {
-          name: "resources 3d",
+          name: "Management Stuff",
           links: [
             {
-              name: "thingiverse",
-              url: "https://www.thingiverse.com/",
+              name: "Go4Schools",
+              url: "https://www.go4schools.com/sso/account/login?site=Student&returnUrl=https%3A%2F%2Fwww.go4schools.com%2Fstudents%2Fdefault.aspx",
+              icon: "circle-letter-t",
+              icon_color: "#7daea3",
+            },
+            {
+              name: "ManageBac",
+              url: "https://deira.managebac.com/student/home",
               icon: "circle-letter-t",
               icon_color: "#7daea3",
             },
@@ -188,22 +184,16 @@ const default_config = {
     },
     {
       name: "dev",
-      background_url: "src/img/banners/cbg-7.gif",
+      background_url: "",
       categories: [
         {
           name: "repositories",
           links: [
             {
-              name: "github",
-              url: "https://github.com/",
+              name: "Github",
+              url: "https://github.com/nail-e",
               icon: "brand-github",
               icon_color: "#7daea3",
-            },
-            {
-              name: "gitlab",
-              url: "https://gitlab.com/",
-              icon: "brand-gitlab",
-              icon_color: "#e78a4e",
             },
           ],
         },
@@ -228,39 +218,27 @@ const default_config = {
               icon: "biohazard",
               icon_color: "#ea6962",
             },
-            {
-              name: "vscode",
-              url: "https://vscode.dev/",
-              icon: "brand-vscode",
-              icon_color: "#7daea3",
-            },
           ],
         },
         {
           name: "challenges",
           links: [
             {
-              name: "hackthebox",
-              url: "https://app.hackthebox.com",
-              icon: "box",
-              icon_color: "#a9b665",
-            },
-            {
-              name: "cryptohack",
-              url: "https://cryptohack.org/challenges/",
-              icon: "brain",
-              icon_color: "#e78a4e",
-            },
-            {
-              name: "tryhackme",
-              url: "https://tryhackme.com/dashboard",
+              name: "CodeWars",
+              url: "https://www.codewars.com/dashboard",
               icon: "brand-onedrive",
               icon_color: "#ea6962",
             },
             {
-              name: "hackerrank",
-              url: "https://www.hackerrank.com/dashboard",
+              name: "CryptoRank",
+              url: "https://cryptohack.org/challenges/",
               icon: "code-asterix",
+              icon_color: "#a9b665",
+            },
+            {
+              name: "hackthebox",
+              url: "https://app.hackthebox.com",
+              icon: "box",
               icon_color: "#a9b665",
             },
           ],
@@ -268,14 +246,20 @@ const default_config = {
       ],
     },
     {
-      name: "myself",
-      background_url: "src/img/banners/cbg-9.gif",
+      name: "Personal",
+      background_url: "",
       categories: [
         {
           name: "mails",
           links: [
             {
-              name: "gmail",
+              name: "Tuta",
+              url: "https://app.tuta.com/login",
+              icon: "brand-gmail",
+              icon_color: "#ea6962",
+            },
+            {
+              name: "Gmail",
               url: "https://mail.google.com/mail/u/0/",
               icon: "brand-gmail",
               icon_color: "#ea6962",
@@ -291,23 +275,17 @@ const default_config = {
               icon: "brand-google-drive",
               icon_color: "#e78a4e",
             },
-            {
-              name: "dropbox",
-              url: "https://www.dropbox.com/h?role=personal&di=left_nav",
-              icon: "box-seam",
-              icon_color: "#7daea3",
-            },
-            {
-              name: "fotos",
-              url: "https://photos.google.com/u/1",
-              icon: "photo-filled",
-              icon_color: "#ea6962",
-            },
           ],
         },
         {
-          name: "stuff",
+          name: "Other Stuff",
           links: [
+            {
+              name: "Website",
+              url: "nail-e.github.io",
+              icon: "brand-linkedin",
+              icon_color: "#7daea3",
+            },
             {
               name: "linkedin",
               url: "https://www.linkedin.com/feed/",
